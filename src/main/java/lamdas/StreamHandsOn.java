@@ -8,7 +8,7 @@ import java.util.stream.Collectors;
 
 import static java.lang.System.*;
 
-public class StreamHandson {
+public class StreamHandsOn {
     public static void main(String[] args)
     {
         //Hands on Streams
@@ -20,7 +20,7 @@ public class StreamHandson {
 
         //using map, double the previous list values
         List<Integer> doubles =al.stream().map(i->i*2).collect(Collectors.toList());
-        //using filter, seperate odd numbers from  the previous list values
+        //using filter, separate odd numbers from  the previous list values
         out.println("post doubling the list is \n"+ doubles +"\n");
         List<Integer> oddList =al.stream().filter(i->i%2!=0).collect(Collectors.toList());
         out.println("post filtering odd values the list is \n "+ oddList +"\n");
