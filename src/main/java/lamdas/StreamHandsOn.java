@@ -41,8 +41,9 @@ public class StreamHandsOn {
         out.println("max value in the natural order list \n"+ al.stream().max(Comparator.naturalOrder()).get() +"\n");
         out.println("min value in the original list \n"+ al.stream().max(Comparator.naturalOrder()).get() +"\n");
         out.println("min value in the reverse order list \n"+ al.stream().max(Comparator.naturalOrder()).get() +"\n");
-        al.forEach(out::print);
-        Integer[] a= al.toArray(new Integer[0]);
+        al.forEach(out:: print);
+        Integer[] a= al.stream().toArray(Integer[]::new);
+        out.println("\nElements of Integer Array are \n");
         for (Integer e:a)
         {
             out.print(" " +e);
